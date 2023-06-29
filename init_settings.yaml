@@ -1,0 +1,26 @@
+dnf:
+  distros:
+    - 'Rocky'
+    - 'Fedora'
+    - 'Red hat'
+    - 'Alma'
+  package_manager: 'dnf'
+  installed: 'list'
+  install_command: 'install'
+  update_all_command: 'update'
+  update_cache: false
+  update_cache_command: 'check-update'
+  family: 'Red Hat'
+  confirmation: '-y'
+deb:
+  distros:
+    - 'Debian'
+    - 'Ubuntu'
+  package_manager: 'apt-get'
+  installed: 'list'
+  install_command: 'install'
+  update_all_command: 'upgrade'
+  update_cache: true
+  update_cache_command: 'update'
+  family: 'Debian'
+  confirmation: '-y'

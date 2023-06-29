@@ -1,0 +1,12 @@
+software_name: 'software-client'
+client_info_path: 'computer_info.yaml'
+systemd_template_path: 'daemon_templates/daemon.service.j2'
+program_files:
+  - 'computer_info.yaml'
+config_files:
+  - 'init_client.py'
+  - 'install.py'
+  - 'init_settings.yaml'
+  - 'install_settings.yaml'
+  - 'linux_software_list.py'
+  - 'main.py'
