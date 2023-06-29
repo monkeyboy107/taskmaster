@@ -1,8 +1,12 @@
 import yaml
 import platform
 
-settings_path = 'init_settings.yaml'
-OS_info_path = 'computer_info.yaml'
+paths = 'settings/paths.yaml'
+with open(paths) as stream:
+    paths_data = yaml.safe_load(stream)
+
+settings_path = paths_data['init_settings']
+OS_info_path = paths_data['computer_info']
 
 with open(settings_path) as stream:
     settings = yaml.safe_load(stream)

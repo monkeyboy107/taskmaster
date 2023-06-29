@@ -1,0 +1,4 @@
+init_settings: 'settings/init_settings.yaml'
+install_settings: 'settings/install_settings.yaml'
+computer_info: 'computer_info.yaml'
+install: 'settings/install_settings.yaml'

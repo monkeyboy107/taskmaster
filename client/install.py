@@ -4,8 +4,10 @@ import os
 import shutil
 import jinja2
 
-settings_path = 'install_settings.yaml'
-with open(settings_path) as stream:
+with open('settings/paths.yaml') as stream:
+    paths = yaml.safe_load(stream)
+
+with open(paths['install']) as stream:
     settings = yaml.safe_load(stream)
 
 software_name = settings['software_name']
